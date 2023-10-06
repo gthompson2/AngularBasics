@@ -1,3 +1,30 @@
 "use strict";
-let lname = 'John';
-//lname = 10
+let lname;
+lname = "Greg";
+let newname = lname.toUpperCase();
+console.log(newname);
+let age = 25;
+var dob = "25";
+var result = parseInt(dob);
+console.log(result);
+let isValid;
+//console.log(isValid); - JS can't see types. Need to assign a value first
+isValid = true;
+console.log(isValid);
+var empList = ["Greg", "Tom", "Steve"];
+var numList = [1, 2, 3, 4, 5];
+var results = numList.filter((num) => num > 2);
+var results2 = numList.find((n) => n === 2);
+var sum = numList.reduce((x, y) => x + y);
+console.log(numList);
+console.log(results);
+console.log(results2);
+console.log(sum);
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+var c = Color.Blue.toString();
+console.log(c);
